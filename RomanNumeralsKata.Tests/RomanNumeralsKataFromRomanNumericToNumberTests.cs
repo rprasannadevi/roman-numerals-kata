@@ -124,4 +124,10 @@ public class RomanNumeralsKataFromRomanNumericToNumberTests
     {
         _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("X V").Should().Be(0);
     }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerals_With_Invalid_Input()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("SDE").Should().Be(0);
+    }
 }

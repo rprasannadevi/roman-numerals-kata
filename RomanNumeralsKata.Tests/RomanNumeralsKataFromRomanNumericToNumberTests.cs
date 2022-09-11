@@ -104,6 +104,6 @@ public class RomanNumeralsKataFromRomanNumericToNumberTests
     [Test]
     public void Get_Number_For_Roman_Numerals_Empty()
     {
-        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("").Should().Be(1994);
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("").Should().Be(0);
     }
 }

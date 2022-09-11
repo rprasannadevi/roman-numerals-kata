@@ -27,14 +27,17 @@ namespace RomanNumeralsKata
         public int GetNumberFromRomanNumerics(string roman)
         {
             int iValue = 0;
-            char prevChar = roman[0];
-            foreach(char currChar in roman)
+            if (roman != "")
             {
-                if (RomanNumericDictionary[currChar] > RomanNumericDictionary[prevChar])
-                    iValue = iValue + RomanNumericDictionary[currChar] - RomanNumericDictionary[prevChar] * 2;
-                else
-                    iValue = iValue + RomanNumericDictionary[currChar];
-                prevChar = currChar;
+                char prevChar = roman[0];
+                foreach (char currChar in roman)
+                {
+                    if (RomanNumericDictionary[currChar] > RomanNumericDictionary[prevChar])
+                        iValue = iValue + RomanNumericDictionary[currChar] - RomanNumericDictionary[prevChar] * 2;
+                    else
+                        iValue = iValue + RomanNumericDictionary[currChar];
+                    prevChar = currChar;
+                }
             }
             Console.WriteLine($"The value of {roman}: " + iValue);
             return iValue;

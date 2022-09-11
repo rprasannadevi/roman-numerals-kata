@@ -18,4 +18,10 @@ public class RomanNumeralsKataFromNumberToRomanNumericTests
     {
         _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(1).Should().Be("I");
     }
+
+    [Test]
+    public void Get_RomanNumeric_From_Number_0()
+    {
+        _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(1).Should().Be("0");
+    }
 }

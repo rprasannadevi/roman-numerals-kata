@@ -118,4 +118,10 @@ public class RomanNumeralsKataFromRomanNumericToNumberTests
     {
         _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics(" ").Should().Be(0);
     }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerals_WhiteSpaceWith_Roman()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("X V").Should().Be(0);
+    }
 }

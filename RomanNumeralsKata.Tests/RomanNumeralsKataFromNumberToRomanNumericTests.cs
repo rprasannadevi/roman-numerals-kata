@@ -30,4 +30,10 @@ public class RomanNumeralsKataFromNumberToRomanNumericTests
     {
         _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(3001).Should().Be("0");
     }
+
+    [Test]
+    public void Get_RomanNumeric_From_Number_5000()
+    {
+        _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(5000).Should().Be("0");
+    }
 }

@@ -3,7 +3,7 @@
 var RomanNumeralsKataFromRomanNumericsToNumber = new RomanNumeralsKataFromRomanNumericsToNumber();
 
 
-string sRoman;
+string? sRoman;
 int iNumericValue;
 Console.Write("Please Enter a Roman Numeral: ");
 sRoman = Console.ReadLine();

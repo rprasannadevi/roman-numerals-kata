@@ -112,4 +112,10 @@ public class RomanNumeralsKataFromRomanNumericToNumberTests
     {
         _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics(null).Should().Be(0);
     }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerals_WhiteSpace()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics(" ").Should().Be(0);
+    }
 }

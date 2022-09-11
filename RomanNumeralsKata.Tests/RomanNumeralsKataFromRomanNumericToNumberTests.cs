@@ -20,8 +20,6 @@ public class RomanNumeralsKataFromRomanNumericToNumberTests
     [Test]
     public void Get_Number_From_Roman_Numerics()
     {
-        var romanNumeralToBeConverted = "I";
-        int expectedResult = 1;
-        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics(romanNumeralToBeConverted).Should().Be(expectedResult);
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("I").Should().Be(1);
     }
 }

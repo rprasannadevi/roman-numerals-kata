@@ -27,7 +27,7 @@ namespace RomanNumeralsKata
         public int GetNumberFromRomanNumerics(string roman)
         {
             int iValue = 0;
-            if(!string.IsNullOrEmpty(roman))
+            if(!string.IsNullOrEmpty(roman) && !roman.Contains(' '))
             {
                 char prevChar = roman[0];
                 foreach (char currChar in roman)

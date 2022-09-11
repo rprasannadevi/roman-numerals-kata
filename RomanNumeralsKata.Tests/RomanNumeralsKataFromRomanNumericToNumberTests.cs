@@ -18,8 +18,86 @@ public class RomanNumeralsKataFromRomanNumericToNumberTests
     }
 
     [Test]
-    public void Get_Number_From_Roman_Numerics()
+    public void Get_Number_For_Roman_Numerics_I()
     {
         _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("I").Should().Be(1);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_II()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("II").Should().Be(2);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_III()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("III").Should().Be(3);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_IV()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("IV").Should().Be(4);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_V()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("V").Should().Be(5);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_VI()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("VI").Should().Be(6);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_VII()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("VII").Should().Be(7);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_VIII()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("VIII").Should().Be(8);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_IX()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("IX").Should().Be(9);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_X()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("X").Should().Be(10);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_LV()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("LV").Should().Be(55);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_MMMDCCXCV()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("MMMDCCXCV").Should().Be(3795);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerics_LVIII()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("LVIII").Should().Be(58);
+    }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerals_MCMXCIV()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("MCMXCIV").Should().Be(1994);
     }
 }

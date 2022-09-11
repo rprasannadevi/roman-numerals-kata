@@ -10,7 +10,7 @@ namespace RomanNumeralsKata
     {
         public int GetNumberFromRomanNumerics(string roman)
         {
-            return 0;
+            return 1;
         }
     }
 }

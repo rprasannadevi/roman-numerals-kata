@@ -32,11 +32,16 @@ namespace RomanNumeralsKata
                 char prevChar = roman[0];
                 foreach (char currChar in roman)
                 {
-                    if (RomanNumericDictionary[currChar] > RomanNumericDictionary[prevChar])
-                        iValue = iValue + RomanNumericDictionary[currChar] - RomanNumericDictionary[prevChar] * 2;
+                    if (RomanNumericDictionary.ContainsKey(currChar))
+                    {
+                        if (RomanNumericDictionary[currChar] > RomanNumericDictionary[prevChar])
+                            iValue = iValue + RomanNumericDictionary[currChar] - RomanNumericDictionary[prevChar] * 2;
+                        else
+                            iValue = iValue + RomanNumericDictionary[currChar];
+                        prevChar = currChar;
+                    }
                     else
-                        iValue = iValue + RomanNumericDictionary[currChar];
-                    prevChar = currChar;
+                        return 0;
                 }
             }
             Console.WriteLine($"The value of {roman}: " + iValue);

@@ -22,6 +22,6 @@ public class RomanNumeralsKataFromNumberToRomanNumericTests
     [Test]
     public void Get_RomanNumeric_From_Number_0()
     {
-        _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(1).Should().Be("0");
+        _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(0).Should().Be("0");
     }
 }

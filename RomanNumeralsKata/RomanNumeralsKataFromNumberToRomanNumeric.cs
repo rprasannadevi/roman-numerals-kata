@@ -11,7 +11,10 @@ namespace RomanNumeralsKata
 
         public string GetRomanNumericsFromNumber(int number)
         {
+            if(number > 0)
             return "I";
+            else
+                return "0";
         }
     }
 }

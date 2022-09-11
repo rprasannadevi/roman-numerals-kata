@@ -100,4 +100,10 @@ public class RomanNumeralsKataFromRomanNumericToNumberTests
     {
         _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("MCMXCIV").Should().Be(1994);
     }
+
+    [Test]
+    public void Get_Number_For_Roman_Numerals_Empty()
+    {
+        _RomanNumeralsKataFromRomanNumericsToNumber.GetNumberFromRomanNumerics("").Should().Be(1994);
+    }
 }

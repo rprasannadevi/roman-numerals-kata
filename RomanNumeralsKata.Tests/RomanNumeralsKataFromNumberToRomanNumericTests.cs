@@ -36,4 +36,10 @@ public class RomanNumeralsKataFromNumberToRomanNumericTests
     {
         _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(5000).Should().Be("0");
     }
+
+    [Test]
+    public void Get_RomanNumeric_From_Number_5()
+    {
+        _RomanNumeralsKataFromNumberToRomanNumeric.GetRomanNumericsFromNumber(5).Should().Be("V");
+    }
 }

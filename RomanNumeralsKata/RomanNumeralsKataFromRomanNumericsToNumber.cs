@@ -35,16 +35,15 @@ namespace RomanNumeralsKata
                     if (RomanNumericDictionary.ContainsKey(currChar))
                     {
                         if (RomanNumericDictionary[currChar] > RomanNumericDictionary[prevChar])
-                            iValue = iValue + RomanNumericDictionary[currChar] - RomanNumericDictionary[prevChar] * 2;
+                            iValue += RomanNumericDictionary[currChar] - RomanNumericDictionary[prevChar] * 2;
                         else
-                            iValue = iValue + RomanNumericDictionary[currChar];
+                            iValue += RomanNumericDictionary[currChar];
                         prevChar = currChar;
                     }
                     else
                         return 0;
                 }
             }
-            Console.WriteLine($"The value of {roman}: " + iValue);
             return iValue;
         }
     }

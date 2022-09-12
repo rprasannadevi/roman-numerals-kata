@@ -39,8 +39,8 @@ namespace RomanNumeralsKata
                 {
                     while(number >= num.Key)
                     {
-                        sRomanString = sRomanString + num.Value;
-                        number = number - num.Key;
+                        sRomanString += num.Value;
+                        number -= num.Key;
                     }
                 }
                 return sRomanString;
